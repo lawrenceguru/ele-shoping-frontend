@@ -1,0 +1,19 @@
+fragment CommentFragment on Comment {
+  id
+  body
+  insertedAt
+  sender {
+    id
+    firstName
+    lastName
+  }
+  receiver {
+    id
+    firstName
+    lastName
+  }
+  recipe {
+    id
+    title
+  }
+}

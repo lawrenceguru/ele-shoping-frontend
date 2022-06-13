@@ -1,0 +1,7 @@
+#import "graphql/fragments/favoriteFragment.graphql"
+
+query isFavorite($userId: String, $listingId: String) {
+  isFavorite(userId: $userId, listingId: $listingId) {
+    ...FavoriteFragment
+  }
+}

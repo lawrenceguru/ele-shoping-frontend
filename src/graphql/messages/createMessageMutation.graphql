@@ -1,0 +1,13 @@
+#import "graphql/fragments/messageFragment.graphql"
+
+mutation createMessage($receiverId: ID!, $listingId: ID! $body: String) {
+  createMessage(receiverId: $receiverId, listingId: $listingId, body: $body) {
+    newMessage: result {
+      ...MessageFragment
+    }
+    messages {
+      field
+      message
+    }
+  }
+}

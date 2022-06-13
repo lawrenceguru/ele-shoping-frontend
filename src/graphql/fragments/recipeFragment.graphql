@@ -1,0 +1,21 @@
+#import "graphql/fragments/commentFragment.graphql"
+
+fragment RecipeFragment on Recipe {
+  id
+  title
+  content
+  totalTime
+  level
+  budget
+  image_url
+  insertedAt
+  author {
+    id
+    firstName
+    lastName
+    insertedAt
+  }
+  comments {
+    ...CommentFragment
+  }
+}

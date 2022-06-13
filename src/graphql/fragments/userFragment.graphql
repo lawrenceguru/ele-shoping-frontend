@@ -1,0 +1,11 @@
+fragment UserForEditingFragment on User {
+  id
+  firstName
+  lastName
+  email
+  primaryPhone
+  postalCode
+  gravatarMd5
+  userName
+  insertedAt
+}

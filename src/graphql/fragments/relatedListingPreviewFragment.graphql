@@ -1,0 +1,13 @@
+fragment RelatedListingPreviewFragment on Listing {
+  id
+  title
+  description
+  category
+  condition
+  pricePerUnit
+  noOfUnits
+  location
+  slug
+  insertedAt
+  photoUrls 
+}

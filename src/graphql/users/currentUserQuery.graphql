@@ -1,0 +1,10 @@
+query currentUser {
+  currentUser {
+    id
+    firstName
+    lastName
+    userName
+    gravatarMd5
+    email
+  }
+}

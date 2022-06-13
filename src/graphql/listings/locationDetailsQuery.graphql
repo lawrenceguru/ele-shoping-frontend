@@ -1,0 +1,9 @@
+query locDetails($postalCode: String) {
+  locationDetails(postalCode: $postalCode) {
+    postalCode
+    placeName
+    stateCode
+    latitude
+    longitude
+  }
+}

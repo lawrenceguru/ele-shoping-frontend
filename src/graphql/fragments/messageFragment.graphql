@@ -1,0 +1,21 @@
+fragment MessageFragment on Message {
+  id
+  insertedAt
+  body
+  sender {
+    id
+    firstName
+    lastName
+    gravatarMd5
+  }
+  receiver {
+    id
+    firstName
+    lastName
+    gravatarMd5
+  }
+  listing {
+    id
+    title
+  }
+}

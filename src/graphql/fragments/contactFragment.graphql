@@ -1,0 +1,19 @@
+fragment ContactFragment on Contact {
+  id
+  inserted_at
+  sender {
+    id
+    firstName
+    lastName
+  }
+  receiver {
+    id
+    firstName
+    lastName
+  }
+  listing {
+      id
+      title
+      photoUrls
+  }
+}

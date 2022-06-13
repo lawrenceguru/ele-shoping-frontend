@@ -1,0 +1,6 @@
+query listingWithDefaultValue {
+  listingWithDefaultValue {
+    category
+    condition    
+  }
+}

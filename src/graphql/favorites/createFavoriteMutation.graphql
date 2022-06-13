@@ -1,0 +1,15 @@
+#import "graphql/fragments/favoriteFragment.graphql"
+
+mutation createFavorite(
+    $listingId: ID
+) {
+  createFavorite(listingId: $listingId) {
+    newFavorite: result {
+      ...FavoriteFragment
+    }
+    messages {
+      field
+      message
+    }
+  }
+}

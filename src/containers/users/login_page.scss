@@ -1,0 +1,63 @@
+.sc-login-page body {
+    overflow: auto;
+    padding: 24px;
+    background: #bdbdbd; }
+  
+  .sc-login-page-wrapper {
+    height: calc(100vh - 256px); }
+    @media (max-width: 959px) {
+      .sc-login-page-wrapper {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start; } }
+  
+  .sc-login-page-inner {
+    padding: 16px; }
+    @media (max-width: 959px) {
+      .sc-login-page-inner {
+        padding: 8px 0; } }
+  
+  .sc-login-page-logo {
+    padding: 24px;
+    margin-bottom: 16px;
+    text-align: center; }
+    @media (max-width: 959px) {
+      .sc-login-page-logo {
+        padding: 12px 24px;
+        margin-bottom: 8px; } }
+    .sc-login-page-logo-light {
+      display: none; }
+  
+  .sc-login-page.sc-theme-dark body {
+    background: #212121; }
+  
+  .sc-login-page.sc-theme-dark a:not(.sc-button) {
+    color: #62b5ff; }
+    .sc-login-page.sc-theme-dark a:not(.sc-button):hover, .sc-login-page.sc-theme-dark a:not(.sc-button):focus {
+      color: #1e87f0; }
+  
+  .sc-login-page.sc-theme-dark .sc-link {
+    color: #62b5ff !important; }
+    .sc-login-page.sc-theme-dark .sc-link:hover, .sc-login-page.sc-theme-dark .sc-link:focus {
+      color: #1e87f0 !important; }
+  
+  .sc-login-page.sc-theme-dark .sc-color-secondary {
+    color: rgba(255, 255, 255, 0.67) !important; }
+  
+  .sc-login-page.sc-theme-dark .uk-input,
+  .sc-login-page.sc-theme-dark .uk-select,
+  .sc-login-page.sc-theme-dark .uk-textarea {
+    background: #757575;
+    color: #fff; }
+  
+  .sc-login-page.sc-theme-dark .sc-input-wrapper > label {
+    color: rgba(255, 255, 255, 0.5); }
+  
+  .sc-login-page.sc-theme-dark .uk-card {
+    background: #424242;
+    color: #fff; }
+  
+  .sc-login-page.sc-theme-dark .sc-login-page-logo {
+    display: none; }
+    .sc-login-page.sc-theme-dark .sc-login-page-logo-light {
+      display: block; }

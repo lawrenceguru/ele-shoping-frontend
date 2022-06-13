@@ -1,0 +1,14 @@
+fragment RecipePreviewFragment on Recipe {
+  id
+  title
+  description
+  totalTime
+  level
+  budget
+  image_url
+  author {
+    id
+    firstName
+    lastName
+  }
+}

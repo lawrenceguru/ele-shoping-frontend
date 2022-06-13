@@ -1,0 +1,25 @@
+#import "graphql/fragments/listingPreviewFragment.graphql"
+
+mutation createListing(
+  $title: String
+  $description: String
+  $category: String
+  $condition: String
+  $noOfUnits: String
+  $pricePerUnit: String
+  $location: String
+  $image: Upload
+) {
+  createListing(
+    input: { title: $title, description: $description, noOfUnits: $noOfUnits, pricePerUnit: $pricePerUnit, 
+             category: $category, condition: $condition, location: $location, image: $image }
+  ) {
+    newListing: result {
+      ...ListingPreviewFragment
+    }
+    messages {
+      field
+      message
+    }
+  }
+}

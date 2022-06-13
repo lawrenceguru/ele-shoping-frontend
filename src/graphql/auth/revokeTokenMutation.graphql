@@ -1,0 +1,8 @@
+mutation revokeToken {
+  revokeToken {
+    messages {
+      field
+      message
+    }
+  }
+}

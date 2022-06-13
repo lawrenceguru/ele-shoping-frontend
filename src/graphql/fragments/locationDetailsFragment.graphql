@@ -1,0 +1,7 @@
+fragment locationDetailsFragment on locationDetails {
+    placeName
+    stateCode
+    postalCode
+    latitude
+    longitude
+  }

@@ -1,0 +1,7 @@
+#import "graphql/fragments/contactFragment.graphql"
+
+query userContacts($senderId: ID, $limit: Int, $offset: Int) {
+  userContacts(senderId: $senderId, limit: $limit, offset: $offset) {
+    ...ContactFragment
+  }
+}

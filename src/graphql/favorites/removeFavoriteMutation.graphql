@@ -1,0 +1,11 @@
+mutation removeFavorite($favoriteId: ID!) {
+  removeFavorite(favoriteId: $favoriteId) {
+    favorite: result {
+      id
+    }
+    messages {
+      field
+      message
+    }
+  }
+}

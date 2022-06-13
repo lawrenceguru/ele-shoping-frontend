@@ -1,0 +1,11 @@
+mutation deleteListing($id: ID!) {
+  deleteListing(id: $id) {
+    listing: result {
+      id
+    }
+    messages {
+      field
+      message
+    }
+  }
+}

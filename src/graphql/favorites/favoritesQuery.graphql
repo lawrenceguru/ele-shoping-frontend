@@ -1,0 +1,7 @@
+#import "graphql/fragments/favoriteFragment.graphql"
+
+query userFavorites($limit: Int, $offset: Int, $userId: String) {
+  userFavorites(limit: $limit, offset: $offset, userId: $userId) {
+    ...FavoriteFragment
+  }
+}

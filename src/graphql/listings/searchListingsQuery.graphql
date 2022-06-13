@@ -1,0 +1,11 @@
+#import "graphql/fragments/listingPreviewFragment.graphql"
+
+query listings($limit: Int, $offset: Int, $category: String,
+               $condition: String, $location: String, 
+               $radius: String, $priceFrom: Int, $priceTo: Int) {
+  searchListings(limit: $limit, offset: $offset, category: $category,
+                 condition: $condition, location: $location,
+                 radius: $radius, priceFrom: $priceFrom, priceTo: $priceTo) {
+    ...ListingPreviewFragment
+  }
+}

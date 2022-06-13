@@ -1,0 +1,8 @@
+mutation cancelAccount {
+  cancelAccount {
+    messages {
+      field
+      message
+    }
+  }
+}

@@ -1,0 +1,7 @@
+#import "graphql/fragments/listingPreviewFragment.graphql"
+
+query searchListings($limit: Int, $offset: Int, $keywords: String) {
+  listings(limit: $limit, offset: $offset, keywords: $keywords) {
+    ...ListingPreviewFragment
+  }
+}

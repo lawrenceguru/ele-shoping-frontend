@@ -1,0 +1,12 @@
+fragment ReviewFragment on Review {
+  id
+  body
+  rating
+  insertedAt
+  author {
+    id
+    firstName
+    lastName
+    insertedAt
+  }
+}

@@ -1,0 +1,7 @@
+#import "graphql/fragments/commentFragment.graphql"
+
+subscription newComment($senderId: ID!, $receiverId: ID!, $recipeId: ID!) {
+  newComment(senderId: $senderId, receiverId: $receiverId, recipeId: $recipeId) {
+    ...CommentFragment
+  }
+}

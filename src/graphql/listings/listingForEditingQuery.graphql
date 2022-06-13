@@ -1,0 +1,7 @@
+#import "graphql/fragments/listingForEditingFragment.graphql"
+
+query listingForEditing($id: ID!) {
+  listing(id: $id) {
+    ...ListingForEditingFragment
+  }
+}

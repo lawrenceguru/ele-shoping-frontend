@@ -1,0 +1,10 @@
+fragment RecipeForEditingFragment on Recipe {
+  id
+  title
+  content
+  description
+  totalTime
+  level
+  budget
+  image_url
+}

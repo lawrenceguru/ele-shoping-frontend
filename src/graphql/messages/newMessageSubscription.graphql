@@ -1,0 +1,7 @@
+#import "graphql/fragments/messageFragment.graphql"
+
+subscription newMessage($receiverId: ID!, $listingId: ID!) {
+  newMessage(receiverId: $receiverId, listingId: $listingId) {
+    ...MessageFragment
+  }
+}

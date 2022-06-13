@@ -1,0 +1,7 @@
+#import "graphql/fragments/listingPreviewFragment.graphql"
+
+query relatedListings($listingId: String, $category: String, $location: String) {
+  relatedListings(listingId: $listingId, category: $category, location: $location) {
+    ...ListingPreviewFragment
+  }
+}

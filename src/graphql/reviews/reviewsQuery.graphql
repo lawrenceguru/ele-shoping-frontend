@@ -1,0 +1,11 @@
+#import "graphql/fragments/reviewFragment.graphql"
+
+query userReviews($limit: Int, $offset: Int, $userId: String) {
+  userReviewStats(userId: $userId) {
+    totalReviews
+    averageReview
+  }
+  userReviews(limit: $limit, offset: $offset, userId: $userId) {
+    ...ReviewFragment
+  }
+}

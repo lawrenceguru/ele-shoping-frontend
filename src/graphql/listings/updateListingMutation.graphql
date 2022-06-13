@@ -1,0 +1,36 @@
+#import "graphql/fragments/listingForEditingFragment.graphql"
+
+mutation updateListing(
+  $id: ID!
+  $title: String
+  $description: String
+  $category: String
+  $condition: String
+  $noOfUnits: String
+  $pricePerUnit: String
+  $location: String
+  $removeImage: Boolean
+  $photoUrls: Upload
+) {
+  updateListing(
+    id: $id
+    input: {
+      title: $title
+      description: $description
+      noOfUnits: $noOfUnits
+      pricePerUnit: $pricePerUnit
+      category: $category
+      condition: $condition
+      remove_image: $removeImage
+      photoUrls: $photoUrls
+    }
+  ) {
+    listing: result {
+      ...ListingForEditingFragment
+    }
+    messages {
+      field
+      message
+    }
+  }
+}

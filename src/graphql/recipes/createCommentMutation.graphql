@@ -1,0 +1,13 @@
+#import "graphql/fragments/commentFragment.graphql"
+
+mutation createComment($receiverId: ID!, $recipeId: ID! $body: String) {
+  createComment(receiverId: $receiverId, recipeId: $recipeId, body: $body) {
+    newComment: result {
+      ...CommentFragment
+    }
+    messages {
+      field
+      message
+    }
+  }
+}

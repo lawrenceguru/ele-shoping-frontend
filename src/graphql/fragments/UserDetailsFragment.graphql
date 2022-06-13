@@ -1,0 +1,9 @@
+fragment UserDetailsFragment on User {
+  id
+  firstName
+  lastName
+  email
+  gravatarMd5
+  userName
+  insertedAt
+}

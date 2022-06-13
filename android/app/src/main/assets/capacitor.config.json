@@ -1,0 +1,11 @@
+{
+	"appId": "io.ionic.letzell",
+	"appName": "letzell",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
+	"webDir": "build",
+	"cordova": {},
+	"server": {
+		"hostname": "localhost:3000"
+	}
+}

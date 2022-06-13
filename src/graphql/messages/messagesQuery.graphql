@@ -1,0 +1,7 @@
+#import "graphql/fragments/messageFragment.graphql"
+
+query userMessages($senderId: ID, $receiverId: ID, $listingId: ID, $limit: Int, $offset: Int) {
+  userMessages(senderId: $senderId, receiverId: $receiverId, listingId: $listingId, limit: $limit, offset: $offset) {
+    ...MessageFragment
+  }
+}

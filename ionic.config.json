@@ -1,0 +1,7 @@
+{
+    "name": "letzell",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }

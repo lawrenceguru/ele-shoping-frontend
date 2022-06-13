@@ -1,0 +1,12 @@
+#import "graphql/fragments/userFragment.graphql"
+mutation signIn($email: String) {
+  signIn(email: $email) {
+        user: result {
+      ...UserForEditingFragment
+    }
+    messages {
+      field
+      message
+    }
+  }
+}

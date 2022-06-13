@@ -1,0 +1,27 @@
+fragment ListingFragment on Listing {
+  id
+  title
+  description
+  category
+  categoryDescription
+  conditionDescription
+  pricePerUnit
+  noOfUnits 
+  location
+  locationDetails {
+    placeName
+    stateCode
+    latitude
+    longitude
+  }
+  slug
+  insertedAt
+  photoUrls
+  status
+  owner {
+    id
+    firstName
+    lastName  
+    insertedAt
+  }
+}

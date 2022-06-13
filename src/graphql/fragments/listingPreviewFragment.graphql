@@ -1,0 +1,13 @@
+fragment ListingPreviewFragment on Listing {
+  id
+  title
+  category
+  condition
+  pricePerUnit
+  location
+  locationDetails {
+    placeName
+    stateCode
+  }
+  photoUrls
+}

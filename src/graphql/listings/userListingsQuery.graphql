@@ -1,0 +1,7 @@
+#import "graphql/fragments/listingPreviewFragment.graphql"
+
+query userListings($limit: Int, $offset: Int, $userId: String) {
+  userListings(limit: $limit, offset: $offset, userId: $userId) {
+    ...ListingPreviewFragment
+  }
+}

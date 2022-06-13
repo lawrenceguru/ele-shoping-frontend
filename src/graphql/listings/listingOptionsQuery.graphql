@@ -1,0 +1,12 @@
+query listingOptions {
+  categoryOptions: listingOptions(field: "Category") {
+    label
+    group
+    value
+    children
+  }
+  conditionOptions: listingOptions(field: "Condition") {
+    label
+    value
+  }
+}

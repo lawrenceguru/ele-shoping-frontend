@@ -1,0 +1,24 @@
+fragment FavoriteFragment on Favorite {
+  id
+  status  
+  listingId
+  insertedAt
+  user {
+    id
+    firstName
+    lastName
+  }
+  listing {
+      id
+      title
+      description
+      category
+      condition
+      pricePerUnit
+      noOfUnits 
+      location
+      slug
+      insertedAt
+      photoUrls
+  }
+}

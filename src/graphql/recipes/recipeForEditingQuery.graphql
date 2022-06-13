@@ -1,0 +1,7 @@
+#import "graphql/fragments/recipeForEditingFragment.graphql"
+
+query recipeForEditing($id: ID!) {
+  recipe(id: $id) {
+    ...RecipeForEditingFragment
+  }
+}
